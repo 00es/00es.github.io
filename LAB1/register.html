@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<h2>동아리 가입 양식</h2>
+
+<form action="/action_page.php">
+    <label for="fname">이름</label>
+    <input type="text"><br>
+    <label for="class">학부/학과</label>
+    <input list="class">
+    <datalist id="class">
+        <option value="소프트웨어학부"></option>
+        <option value="화학과"></option>
+        <option value="통계학과"></option>
+        <option value="생명시스템학부"></option>
+    </datalist>
+    <br/>
+    <label for="학년">학년</label>
+    <input type="radio" id="1학년" name="fav_language" value="1학년">
+    <label for="1학년">1학년</label>
+    <input type="radio" id="2학년" name="fav_language" value="2학년">
+    <label for="2학년">2학년</label>
+    <input type="radio" id="3학년" name="fav_language" value="3학년">
+    <label for="3학년">3학년</label>
+    <input type="radio" id="4학년" name="fav_language" value="4학년">
+    <label for="4학년">4학년</label><br>
+    <label for="number">학번</label>
+    <input type="text"><br>
+    <label for="email">이메일</label>
+    <input type="text" name="email" placeholder="id@host" ><br>
+    <label for="phone">전화번호</label>
+    <input type="text" name="phone" placeholder="010-1234-5678"><br>
+    <label for="register">가입동기</label>
+    <textarea name="message" rows="2" cols="20"></textarea>
+    <br/>
+    <input type="submit" value="가입하기">
+    <input type="reset" value="취소하기">
+</form>
+
+</body>
+</html>

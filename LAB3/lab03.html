@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>HTML + CSS 실습 5</title>
+	<link rel="stylesheet" href="lab03.css">
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div class="total">
+	<header id="top_header">
+        <hgroup id="title">
+            <h1>컴퓨터와 소통하는 시대</h1>
+            <p> 컴퓨터의 언어들</p>
+        </hgroup>
+        <nav >
+			<ul id="navi">
+				<li><a href="#"> 신규강의 </a>
+					<ul id="sub">
+					<li><a href="#">프로그래밍개론</a></li>
+					<li><a href="#">웹 시스템 설계</a></li>
+				  	</ul>
+				</li>
+			    <li><a href="#">분야별 강의</a>
+					<ul id="sub">
+					<li><a href="#">프론트엔드</a></li>
+					<li><a href="#">백엔드</a></li>
+				  	</ul>
+				</li>
+				<li><a href="#">당일 특가</a>
+				</li>
+			    <li><a href="#">국비지원</a>
+				</li>
+			</ul>
+        </nav>
+    </header>
+	<div>
+		<aside id="login">
+			<form>
+				<label for="user">아이디</label>
+				<input type="text" id="user" size="15"><br>
+				<label for="pass">비밀번호</label>
+				<input type="password" id="pass" size="15"><br>
+				<input type="submit" value="로그인">
+				<input type="button" value="회원가입">
+			</form>			
+		</aside>
+		
+		<section id="post">
+			<article>
+                <div class="card">
+                    <header>
+                      <h3>Python</h3>
+                    </header>
+					<div class="contents">
+                    <figure>
+                      <img src="LAB3 -img1.jpg">
+                    </figure>
+                    <p>1991년 네덜란드계 소프트웨어 엔지니어인 귀도 반 로섬이 발표한 고급 프로그래밍 언어로, '인터프리터를 사용하는 객체지향 언어'이자 플랫폼에 독립적인, 동적 타이핑(dynamically typed) 대화형 언어이다.<br/><br/> 파이썬이라는 이름은 귀도가 좋아하는 코미디인〈Monty Python's Flying Circus〉에서 따온 것이다. 이름에서 고대신화에 나오는 커다란 뱀을 연상하는 경우도 있겠지만 이와는 무관하다. 다만 로고에는 뱀 두마리가 형상화되어 있다. 간결하고 읽기 쉬운 문법이 특징인 프로그래밍 언어로 데이터 분석, 웹 개발, 인공지능 등 다양한 분야에서 활용된다.</p>
+                    </div>
+				</div> 
+			</article>
+			<article>
+                <div class="card">
+                    <header>
+                      <h3>C Programming</h3>
+                    </header>
+					<div class="contents">
+                    <figure>
+                      <img src="LAB3 -img2.jpg">
+                    </figure>
+                    <p>1972년 켄 톰슨과 데니스 리치가 벨 연구소에서 일할 당시 새로 개발된 유닉스 운영 체제에서 사용하기 위해 개발한 프로그래밍 언어이다.<br/><br/> 켄 톰슨은 BCPL언어를 필요에 맞추어 개조해서 "B"언어(언어를 개발한 벨 연구소의 B를 따서)라 명명했고, 데니스 리치가 이것을 개선하여 C 언어가 탄생했다. 유닉스 시스템의 바탕 프로그램은 모두 C로 작성되었고, 수많은 운영 체제의 커널 또한 C로 만들어졌다. 오늘날 많이 쓰이는 C++는 C에서 파생된 객체 지향형 언어</p>
+				    </div>
+				</div> 
+            </article>
+			<article>
+                <div class="card">
+                    <header>
+                      <h3>Java</h3>
+                    </header>
+					<div class="contents">
+                    <figure>
+                      <img src="LAB3 -img3.jpg">
+                    </figure>
+                    <p>Java Is the Language of Possibilities<br/>Java is powering the innovation behind our digital world. Harness this potential with Java resources for student coders, hobbyists, developers, and IT leaders.<br/><br/>자바의 여러가지 의미<br/>
+						자바서버 페이지 (JSP, JavaServer Pages) - HTML 문서에 자바 코드를 삽입하여 동적 웹 페이지를 생성하는 프로그래밍 언어<br/>자바 애플릿 (Java Applet) - 자바 바이트코드 형태로 배포되는 애플릿<br/>자바 라이브러리 (Java Library) - 다양한 패키지를 Zip으로 묶어 .jar 로 변환한 파일</p>
+				    </div>
+				</div> 
+			</article>
+		</section>
+	
+		<aside id="ad">
+			<article>
+				<p>광고</p>
+				<p><img src="LAB3 -img5.jpg" width="160"></p>
+				<p>코딩테스트 <span class="accent">합격</span> 성공 스토리</p>
+			</article>
+			<article>
+				<p><span class="accent">코딩테스트 합격</span>을 원한다면</p>
+				<p><img src="LAB3 -img4.jpg" width="170"></p>
+				<p>Event<br/><span class="accent">10</span>% 인강 할인<br>	(교재 무료 배송)</p>
+			</article>
+		</aside>
+	</div>
+	<footer>
+		<nav id="foot">
+			<ul>
+				<li><a href="#">홈페이지 소개</a>
+				<li><a href="#">인사말</a>
+				<li><a href="#">회사 위치</a>
+				<li><a href="#">인재를 모집합니다.</a>
+			</ul>
+		</nav>	
+	</footer>
+
+	</div>
+</body>
+</html>
