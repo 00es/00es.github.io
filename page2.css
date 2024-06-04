@@ -1,0 +1,58 @@
+.total{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    /*background-color: rgba(212, 177, 220, 0.923);
+    border: 3px solid black;*/
+}
+.round1{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 75%;
+    border: 3px solid black;
+    margin-top: 120px;
+    margin-bottom: 160px;
+    margin-left: 200px;
+    margin-right: 100px;
+    padding: 30px;
+}
+.round2{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 75%;
+    border: 3px solid black;
+    margin-top: 120px;
+    margin-bottom: 160px;
+    margin-left: 100px;
+    margin-right: 200px;
+    padding: 30px;
+}
+.name{
+    margin: -10px;
+}
+#memo{
+    text-align: center;
+    margin-bottom: -50px;
+}
+#memo > h1{
+    font-size: 70px;
+}
+#memo > h3{
+    font-size: 25px;
+    margin-bottom: -75px;
+}
+#post{
+    flex: 3; /* post 요소가 더 많은 공간을 차지하도록 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.round1,.round2 > h1{
+    line-height: 60px;
+}
