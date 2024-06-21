@@ -7,15 +7,25 @@
 	<style>
 		
 	</style>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) =>{
+            document.body.addEventListener('click',() =>{
+                window.location.href = 'page3.html';
+            });
+        });
+    </script>
 </head>
 <body>
+    화면의 아무 곳이나 클릭하면 다음 페이지로 이동합니다.
 	<div class="total">
         <aside class="name">
-            <div class="round1">
+            <div class="round1" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
                 <h1>상현</h1>
+                <img src="상현역.jpg" alt="상현" class="round-image hidden">
             </div>
-            <div class="round1">
+            <div class="round1" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
                 <h1>수지구청</h1>
+                <img src="수지구청역.jpg" alt="수지구청" class="round-image hidden">
             </div>
         </aside>
         <section id="post">
@@ -27,13 +37,27 @@
             </article>
         </section>
         <aside class="name">
-	        <div class="round2">
+	        <div class="round2" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
                 <h1>성복</h1>
+                <img src="성복역.jpg" alt="성복" class="round-image hidden">
             </div>
-            <div class="round2">
+            <div class="round2" onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
                 <h1>동천</h1>
+                <img src="동천역.jpg" alt="동천" class="round-image hidden">
             </div>
         </aside>	
 	</div>
+    <script>
+        function changeImage(element) {
+            element.querySelector('h1').style.display = 'none';
+            element.querySelector('.round-image').style.display = 'block';
+        }
+
+        function restoreImage(element) {
+            element.querySelector('h1').style.display = 'block';
+            element.querySelector('.round-image').style.display = 'none';
+        }
+    </script>
+</body>
 </body>
 </html>

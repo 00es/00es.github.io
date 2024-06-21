@@ -1,44 +1,59 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Project</title>
-	<link rel="stylesheet" href="page3.css">
-	<style>
-		
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <link rel="stylesheet" href="page3.css">
+    <style>
+
+    </style>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=lf71atvzlv"></script>
 </head>
 <body>
-	<div class="total">
+    <div class="maps">
+        <h2>수지구 지도</h2>
+        <div id="map" style="width:80%;height:300px;"></div>
+    </div>
+    <div class="mid">
         <aside class="name">
             <div class="round1">
-                <h1>상현</h1>
+                <h1><a href="page4.html">상현</a></h1>
             </div>
             <h4>주변소개</h4>
             <h4>맛집 & 카페</h4>
         </aside>
         <aside class="name">
             <div class="round2">
-                <h1>성복</h1>
+                <h1><a href="page5.html">성복</a></h1>
             </div>
             <h4>주변소개</h4>
             <h4>맛집 & 카페</h4>
         </aside>
         <aside class="name">
             <div class="round3">
-                <h1>수지구청</h1>
+                <h1><a href="page6.html">수지구청</a></h1>
             </div>
             <h4>주변소개</h4>
             <h4>맛집</h4>
         </aside>
         <aside class="name">
             <div class="round4">
-                <h1>동천</h1>
+                <h1><a href="page7.html">동천</a></h1>
             </div>
             <h4>주변소개</h4>
             <h4>맛집</h4>
             <h4>카페</h4>
         </aside>
-	</div>
-</body>
+    </div>
+    <script>
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.3595704, 127.105399),
+            zoom: 12
+        };
+
+        var map = new naver.maps.Map('map', mapOptions);
+        </script>
+    </body>
 </html>
