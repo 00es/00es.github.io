@@ -13,8 +13,9 @@ h1{
     text-align: center;
 }
 #introduce{
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     background-color:rgb(236, 177, 177, 0.8);
+    border: 1px solid black;
 }
 .post img{
     width: 200px;
@@ -39,6 +40,8 @@ aside{
     height: 100%;
     padding-left: 10px;
     background-color:rgb(236, 177, 177, 0.7);
+    
+    border: 1px solid black;
 }
 .post{
     padding: 20px;
@@ -90,6 +93,7 @@ footer{
     display: inline-block;
     margin-top: 30px;
     background-color:rgb(236, 177, 177, 0.7);
+    border: 1px solid black;
 }
 #foot > ul > li{
     display: inline;
@@ -120,4 +124,5 @@ body{
 }
 .package{
     background-color:rgb(236, 177, 177, 0.7);
+    border: 1px solid black;
 }
