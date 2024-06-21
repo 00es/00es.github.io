@@ -14,7 +14,7 @@ h1{
 }
 #introduce{
     border: 1px solid black;
-    margin: 10px;
+    margin-bottom: 10px;
     background-color:rgb(236, 177, 177, 0.7);
 }
 #text img{
